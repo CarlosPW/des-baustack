@@ -1,0 +1,187 @@
+* {
+	box-sizing: border-box;
+	margin: 0%;
+	padding: 0%;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+main {
+	background: linear-gradient(106.35deg, #4316db 0.01%, #3a0ca3 0.02%, #7209b7 99.89%);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.round {
+	align-items: center;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	height: 44px;
+	justify-content: center;
+	width: 44px;
+}
+
+nav {
+	display: flex;
+	height: 50px;
+	margin: 33px 0px;
+	padding: 0 25px;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1444px;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+.logo {
+	cursor: pointer;
+}
+
+.nav_link {
+	margin-left: 30px;
+}
+
+.nav_link:hover {
+	transition: 0.2s;
+	filter: brightness(65%);
+}
+
+.nav_link a {
+	display: flex;
+	align-items: center;
+	color: #e1e1e1;
+	font-weight: 700;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.nav_link a img {
+	padding-right: 12px;
+}
+
+section {
+	display: flex;
+	max-width: 1444px;
+	margin: 0 25px;
+}
+.fig {
+	margin-top: 50px;
+	filter: drop-shadow(5px 5px 10px rgb(0 0 0 / 1));
+}
+
+.info {
+	margin-top: 130px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+section h1 {
+	color: white;
+	font-weight: bold;
+	font-size: 48px;
+	text-align: right;
+}
+
+.boton {
+	background-color: #f72585;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	height: 60px;
+	margin-top: 50px;
+	width: 253px;
+}
+
+.boton a {
+	align-self: center;
+}
+
+.toggle {
+	cursor: pointer;
+	height: 20px;
+	flex-direction: column;
+	justify-content: space-between;
+	display: none;
+}
+
+.line {
+	background-color: white;
+	width: 30px;
+	height: 2px;
+}
+
+@media (max-width: 1320px) {
+	.info {
+		margin-top: 70px;
+		padding: 0px 20px;
+	}
+
+	.info h1 {
+		font-size: 38px;
+	}
+
+	.fig img {
+		width: 400px;
+	}
+}
+
+@media (max-width: 840px) {
+	.info {
+		margin-top: 50px;
+	}
+	svg {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 730px) {
+	section {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.info {
+		align-items: center;
+		margin-top: 15px;
+	}
+
+	.info h1 {
+		text-align: center;
+	}
+
+	.fig {
+		margin-top: 15px;
+	}
+
+	.fig img {
+		width: 100%;
+		max-width: 400px;
+		padding: 0 10px;
+	}
+
+	nav ul {
+		display: none;
+	}
+
+	.toggle {
+		display: flex;
+	}
+}
+
+svg {
+	width: 100%;
+
+	overflow: hidden;
+}
